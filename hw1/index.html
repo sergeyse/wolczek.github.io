@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Auction Homepage</title>
+    <title>ABC Auction</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/docs.min.css">
     <link rel="stylesheet" href="css/app.css">
 
 </head>
 <body>
 
 <!-- Navbar -->
-<div class="navbar navbar-inverse navbar-default">
+<div class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -22,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:void(0);">
+            <a class="navbar-brand" href="javascript:gotoHome();">
                 <span class="glyphicon glyphicon-gift"></span>&nbsp;ABC Auction
             </a>
         </div>
@@ -44,32 +45,6 @@
     </div>
 </div>
 <!-- / Navbar -->
-
-<div class="container hidden" id="searchresults">
-    <div class="row">
-        <div id="browse-location" class="text-left">
-            <a href="/">Home</a>&nbsp;<span class="glyphicon glyphicon-chevron-right"></span> Search results</div>
-    </div>
-
-    <div class="row">
-    <form class="form-findnow" role="form">
-
-        <ul class="list-unstyled">
-            <li class="col-sm-4">
-                <div>
-                    <h3 class="panel-title">Product</h3>
-                    <input type="text" class="form-control" placeholder="Product title" autofocus>
-                </div>
-                <div>
-                </div>
-            </li>
-        </ul>
-
-        <button class="btn btn-lg btn-primary" type="submit">Find now</button>
-
-    </form>
-    </div>
-</div>
 
 <div class="container" id="homepage">
 
@@ -221,19 +196,85 @@
         </ul>
         <!-- / Featured Products list with thumbnails and description  -->
     </div>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <br/>
-        <a href="javascript:void(0)">Home</a> |
-        <a href="javascript:void(0)">Search</a> |
-        <a href="javascript:void(0)">About Us</a> |
-        <a href="javascript:void(0)">Terms of Service</a>
-        <br/><br/>
-    </footer>
-    <!-- / Footer -->
-
 </div>
+
+<!-- Search Part -->
+<div id="searchresults" class="container hidden">
+
+    <!-- Page path -->
+    <ol class="breadcrumb">
+      <li><a href="javascript:gotoHome();">Home</a></li>
+      <li class="active">Search results</li>
+    </ol>
+
+    <!--
+    <div class="bs-docs-grid show-grid">
+    -->
+    <div>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-md-12 col-sm-6 col-xs-12">
+              <label class="control-label">Product</label><br />
+              <input type="text" class="form-control" placeholder="Product title" autofocus>
+          </div>
+          <div class="col-md-12 col-sm-6 col-xs-12">
+            <label class="control-label">&nbsp;</label><br />
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Category</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Cell Phones</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Camera Lens</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">Price</div>
+              <div class="col-md-12 col-sm-12 col-xs-12">Slider</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">Date</div>
+              <div class="col-md-12 col-sm-12 col-xs-12"># of bids</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <form class="form-findnow" role="form">
+    </form>
+    -->
+    
+    </div>
+    <button class="btn btn-lg btn-primary center-block btn-block" style="max-width: 300px;" type="button">Find now</button>
+</div>
+<!-- / Search Part -->
+
+<!-- Footer -->
+<footer class="text-center">
+    <br/>
+    <a href="javascript:gotoHome();">Home</a> |
+    <a href="javascript:gotoSearch();">Search</a> |
+    <a href="javascript:void(0)">About Us</a> |
+    <a href="javascript:void(0)">Terms of Service</a>
+    <br/><br/>
+</footer>
+<!-- / Footer -->
 
 <script src="assets/js/jquery-2.1.0.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
