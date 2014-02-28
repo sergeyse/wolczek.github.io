@@ -1,0 +1,24 @@
+[
+	{
+    "id": "1",
+    "image": "assets/img/01.jpg",
+    "category": "cellphone",
+    "title": "Item's title",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "closeDate": "2014-05-31",
+    "watchers": "17",
+    "price": "1234",
+    "currency": "$"
+	},
+	{
+    "id": "2",
+    "image": "assets/img/02.jpg",
+    "category": "cellphone",
+    "title": "Item's title",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "closeDate": "2014-05-31",
+    "watchers": "17",
+    "price": "1234",
+    "currency": "$"
+	}
+]
