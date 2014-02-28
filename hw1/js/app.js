@@ -43,7 +43,12 @@ function gotoSearch() {
   $("#searchresults").removeClass("hidden");
   
   $("#search-results-grid").empty();
-  loadDataWithTemplate("api/search.json", "#search-results-grid", templateSearch);
+  //loadDataWithTemplate("api/search.json", "#search-results-grid", templateSearch);
+  $.getJSON("api/search.json", function( data ) {
+    $("#search-results-count").html(data.length.toString());
+    $("#search-results-grid").html(Mustache.to_html(templateSearch, { "arr": data }));
+  });
+  
 }
 
 function loadDataWithTemplate(from, to, template) {
